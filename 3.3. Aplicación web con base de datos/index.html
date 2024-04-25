@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+    <title>firebase-crud</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="containerP text-center">
+            <img src="https://cdn-610f9e01c1ac181114e17676.closte.com/wp-content/uploads/2019/01/UDG-Virtual.png"
+                alt="udgvirtual">
+            <h2>miguel angel perez.</h2>
+            <h2>3.3. Aplicación web con base de datos</h2>
+        </div>
+
+        <h1 class="mt-5">Operaciones CRUD</h1>
+
+        <form id="task-form" class="mt-3">
+            <div class="mb-3">
+                <label for="task-title" class="form-label">Titulo:</label>
+                <input type="text" class="form-control" id="task-title" placeholder="Task-title">
+            </div>
+            <div class="mb-3">
+                <label for="task-description" class="form-label">Descripcion:</label>
+                <textarea class="form-control" id="task-description" rows="3" placeholder="Task-Description"></textarea>
+            </div>
+            <button id="btn-task-save" class="btn btn-primary">Guardar</button>
+        </form>
+
+        <div id="tasks-container" class="mt-4"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
